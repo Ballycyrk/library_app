@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'join' => 'users#new'
   get 'catalog' => 'books#index'
   get 'donate' => 'books#new'
+  get 'login' => 'users#show'
+  resources :users
 end
